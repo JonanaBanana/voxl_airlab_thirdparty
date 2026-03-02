@@ -69,4 +69,10 @@ wait
 ./build.sh
 wait
 
+cd "${BASH_DIR}/ORB_SLAM3/Thirdparty/Sophus/build"
+wait
+
+sudo make install
+wait
+
 echo "Installation of all packages finished."

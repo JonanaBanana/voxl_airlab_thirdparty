@@ -44,7 +44,7 @@ wait
 cd build
 wait
 
-cmake ..
+cmake..
 wait
 
 sudo make install -j $(nproc)
@@ -79,6 +79,12 @@ chmod +x build.sh
 wait
 
 ./build.sh
+wait
+
+cd "${BASH_DIR}/ORB_SLAM3/Thirdparty/Sophus/build"
+wait
+
+sudo make install
 wait
 
 echo "Installation of all packages finished."
