@@ -56,7 +56,7 @@ cmake --build build
 
 cd build
 
-make -j8
+make -j $(nproc)
 
 sudo make install
 
