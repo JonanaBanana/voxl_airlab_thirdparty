@@ -7,3 +7,6 @@
 [submodule "kindr"]
 	path = kindr
 	url = https://github.com/JonanaBanana/kindr
+[submodule "ORB_SLAM3"]
+	path = ORB_SLAM3
+	url = https://github.com/JonanaBanana/ORB-SLAM3-No-Pangolin.git
