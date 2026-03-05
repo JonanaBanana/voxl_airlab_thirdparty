@@ -19,11 +19,4 @@ wait
 ./build.sh
 wait
 
-cd "${BASH_DIR}"
-cd ../ORB_SLAM3/Thirdparty/Sophus/build
-wait
-
-sudo make install
-wait
-
 echo "ORBSLAM3 installation complete!"

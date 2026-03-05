@@ -17,16 +17,16 @@ wait
 cd build
 wait
 
-cmake ..
+cmake -GNinja ..
 wait
 
-make -j $(nproc)
+ninja
 wait
 
-make test
+ninja test
 wait
 
-sudo make instsall -j $(nproc)
+sudo ninja install
 wait
 
 cd ..

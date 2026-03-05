@@ -18,10 +18,10 @@ wait
 cd build
 wait
 
-cmake ..
+cmake -GNinja ..
 wait
 
-sudo make install -j $(nproc)
+sudo ninja install
 wait
 
 cd ..

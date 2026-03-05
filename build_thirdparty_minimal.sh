@@ -18,17 +18,17 @@ wait
 cd build
 wait
 
-cmake ..
+cmake -GNinja ..
 
 wait
 
-make -j $(nproc)
+ninja
 wait
 
-make test
+ninja test
 wait
 
-sudo make install -j $(nproc)
+sudo ninja install
 wait
 
 cd ..
@@ -44,29 +44,11 @@ wait
 cd build
 wait
 
-cmake..
+cmake -GNinja ..
 wait
 
-sudo make install -j $(nproc)
+sudo ninja install
 wait
-
-cd ..
-
-sudo rm -r build/
-
-cd "${BASH_DIR}/Pangolin/"
-
-sudo ./scripts/install_prerequisites.sh all
-
-cmake -B build
-
-cmake --build build
-
-cd build
-
-make -j $(nproc)
-
-sudo make install
 
 cd ..
 
@@ -79,12 +61,6 @@ chmod +x build.sh
 wait
 
 ./build.sh
-wait
-
-cd "${BASH_DIR}/ORB_SLAM3/Thirdparty/Sophus/build"
-wait
-
-sudo make install
 wait
 
 echo "Installation of all packages finished."
